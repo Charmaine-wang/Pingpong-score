@@ -6,7 +6,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  margin: 20px;
+  margin: 20px 0;
   background-color: hotpink;
   font-family: Helvetica;
 }
