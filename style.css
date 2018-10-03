@@ -39,9 +39,11 @@ nav li {
 
 .welcome h1 {
   font-size: 40px;
+  font-family: 'K2D', sans-serif;
 }
 .welcome h2 {
   font-size: 30px;
+
 }
 
 .welcome p {
