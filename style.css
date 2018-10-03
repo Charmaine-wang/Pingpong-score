@@ -40,6 +40,9 @@ nav li {
 .welcome h1 {
   font-size: 40px;
 }
+.welcome h2 {
+  font-size: 30px;
+}
 
 .welcome p {
   font-size: 20px;
