@@ -26,7 +26,14 @@ nav li {
   color: white;
   font-size: 20px;
   margin: 5px;
+
+  transition: all 4s ease;
 }
+nav li:hover {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: #222;
+}
+
 .welcome {
   height: 50vh;
   width: 100vw;
