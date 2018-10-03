@@ -27,11 +27,22 @@ nav ul {
   list-style: none;
   display: flex;
 }
-nav li {
+nav li a {
   color: white;
   font-size: 20px;
   margin: 5px;
+  border-radius: 5px;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+
+  transition: all .5s ease;
 }
+nav li a:hover {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: #222;
+}
+
 .welcome {
   height: 50vh;
   width: 100vw;
