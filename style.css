@@ -23,11 +23,20 @@ nav {
 
 nav img {
   margin: 5px;
+  display: block;
+  max-height: 100%;
+  width: auto;
 }
+
+/*
+https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio
+*/
+
 nav ul {
   list-style: none;
   display: flex;
 }
+
 nav li a {
   color: white;
   font-size: 20px;
@@ -36,10 +45,11 @@ nav li a {
   padding: 12px;
   border: 2px solid rgba(255, 255, 255, 0.2);
   text-decoration: none;
-
   transition: all .5s ease;
+  outline: none;
 }
-nav li a:hover {
+
+nav li a:hover, nav li a:focus {
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-color: #222;
 }
@@ -60,8 +70,44 @@ nav li a:hover {
 }
 .welcome h2 {
   font-size: 30px;
-
 }
 
 .welcome p {
   font-size: 20px;
+}
+
+form{
+  margin-top: 10vh;
+}
+
+fieldset{
+  width: 80vh;
+  border: none;
+}
+
+input, textarea, button{
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 2px solid #222;
+}
+
+::placeholder{
+  color: rgb(95, 2, 95);
+}
+
+textarea{
+  resize: none;
+  height: 200px;
+}
+
+button{
+  background-color: rgb(95, 2, 95);
+  font-family: 'K2D', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+input:focus, textarea:focus, button:focus{
+  border-color: cornflowerblue;
+}
